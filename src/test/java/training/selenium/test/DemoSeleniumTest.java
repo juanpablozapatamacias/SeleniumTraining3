@@ -63,6 +63,7 @@ public class DemoSeleniumTest extends BasePage {
 		
 		purchasePage.checkRememberMe();
 		
+		
 		confirmationPage = purchasePage.clickPurchaseFlightButton();
 		Assert.assertTrue(confirmationPage.getConfirmationTitleText().contains("Thank"));
 	}
